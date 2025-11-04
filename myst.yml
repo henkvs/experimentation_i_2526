@@ -8,7 +8,7 @@ project:
   # authors: []
   github: https://github.com/henkvs/experimentation_i_2526
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
-  logo: logo.png
 site:
   template: book-theme
   #   favicon: favicon.ico
+  logo: logo.png
