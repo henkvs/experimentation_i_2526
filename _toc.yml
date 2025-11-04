@@ -1,0 +1,50 @@
+# Table of contents
+
+format: jb-book
+root: intro
+chapters:
+  - file: content/.01_OpenSesameIntro/01_intro.ipynb
+    sections:
+      - file: content/.01_OpenSesameIntro/gettingready_software.ipynb
+      - file: content/.01_OpenSesameIntro/conflict_tasks_Stroop.ipynb
+  - file: content/.02_OpenSesameExpDesignI/02_intro.ipynb
+    sections:
+      - file: content/.02_OpenSesameExpDesignI/conflict_tasks_flanker.ipynb
+  - file: content/.03_OpenSesameExpDesignII/03_intro.ipynb
+    sections:
+      - file: content/.03_OpenSesameExpDesignII/conflict_tasks_gonogo.ipynb
+  - file: content/.04_OpenSesameDebugging/04_intro.ipynb
+    sections:
+      - file: content/.04_OpenSesameDebugging/gaze_cuing.ipynb
+  - file: content/.05_variables/05_intro.ipynb
+    sections:
+      - file: content/.05_variables/gettingready_pythonsoftware.ipynb
+      - file: content/.05_variables/variables_python_exercises.ipynb
+      - file: content/.05_variables/gettingready_python_lessons.ipynb
+      - file: content/.05_variables/variables_python_lessons.ipynb
+  - file: content/.06_conditionals/06_intro.ipynb
+    sections:
+      - file: content/.06_conditionals/wcst.ipynb
+      - file: content/.06_conditionals/conditionals_python_lessons.ipynb
+      - file: content/.06_conditionals/conditionals_python_exercises.ipynb
+  - file: content/.07_functions/07_intro.ipynb
+    sections:
+      - file: content/.07_functions/ultimatumgame/UltimatumGame.ipynb
+      - file: content/.07_functions/functions_python_lessons.ipynb
+      - file: content/.07_functions/functions_python_exercises.ipynb
+  - file: content/.08_loops/08_intro.ipynb
+    sections:
+    - file: content/.08_loops/cyberball/Cyberball.ipynb
+    - file: content/.08_loops/loops_python_lessons.ipynb
+    - file: content/.08_loops/loops_python_exercises.ipynb
+  - file: content/.09_lists/09_intro.ipynb
+    sections:
+    - file: content/.09_lists/digitspan/digitspan.ipynb
+    - file: content/.09_lists/strings_python_lessons.ipynb
+    - file: content/.09_lists/lists_python_lessons.ipynb
+    - file: content/.09_lists/strings_python_exercises.ipynb
+    - file: content/.09_lists/lists_python_exercises.ipynb
+  - file: content/.10_qa/10_intro.ipynb
+    sections:
+    - file: content/.10_qa/questionnaires/questionnaire.ipynb
+  - file: content/.solutions_book/solutions.ipynb
