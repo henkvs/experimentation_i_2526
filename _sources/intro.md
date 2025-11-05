@@ -1,8 +1,10 @@
 # Programming Psychological Experiments using  OpenSesame and python (academic year 2025-2026)
 
+> **Note**:  This course has been updated to use OpenSesame 4.x. Because version 4 introduces some backwards-incompatible changes (e.g., in variable referencing, conditional syntax, logging behaviour), please be aware that some examples from earlier versions may no longer work unchanged.
+
 **Previous versions of this material course**
-- [Course Material 2023-2025](https://henkvs.github.io/experimentation_i_2324/intro.html)
-- [Course Material 2022-2023](https://jeshuat.github.io/Experimentation1/intro.html)
+- [Course Material 2023-2025, OpenSesame version 3](https://henkvs.github.io/experimentation_i_2324/intro.html)
+- [Course Material 2022-2023, OpenSesame version 3 + and python for data science](https://jeshuat.github.io/Experimentation1/intro.html)
 
 **Welcome**
 
@@ -14,7 +16,7 @@ Using this material, you can learn how to build experiments using OpenSesame and
 
 Make sure you save your work in a well-organized folder structure. Some of the later exercises build on work you did earlier during the course.
 
-We have provided solutions to all exercises [here](https://henkvs.github.io/experimentation_i_2324/content/.solutions_book/solutions.html). Just keep in mind that there are often multiple ways to solve a problem, so if you come up with a different solution, that doesn't necessarily mean you're wrong. Don't forget that figuring out how to solve a problem on your own is an important part of the learning process and can be incredibly fulfilling. Embrace the challenge and take pride in your ability to find solutions independently!
+We have provided solutions to all exercises [here](https://henkvs.github.io/experimentation_i_2526/content/.solutions_book/solutions.html). Just keep in mind that there are often multiple ways to solve a problem, so if you come up with a different solution, that doesn't necessarily mean you're wrong. Don't forget that figuring out how to solve a problem on your own is an important part of the learning process and can be incredibly fulfilling. Embrace the challenge and take pride in your ability to find solutions independently!
 
 - If you're taking this course in-person at Leiden University: This course material is partially covered in an intensive eight-week course at Leiden University, where you will participate in plenary and practical sessions to receive live feedback and help. No prior programming knowledge is assumed.
 
@@ -34,7 +36,7 @@ Finally, we are grateful to the teaching team at Leiden University who have cont
 
 Last but not least, we are grateful to the board of the faculty of Social and Behavioral Sciences at Leiden University for awarding us a Grass shoots grant, which allowed us to develop the teaching material for this course.
 
-**Leiden, January 2024**
+**Leiden, January 2026**
 
 **Jeshua Tromp, PhD student**
 
