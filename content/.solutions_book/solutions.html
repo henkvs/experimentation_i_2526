@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Solutions &#8212; My Jupyter Book</title>
+    <title>Solutions &#8212; Experimentation 1</title>
   
   
   
@@ -152,8 +152,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Experimentation 1 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Experimentation 1 - Home"/>`);</script>
   
-    <p class="title logo__title">My Jupyter Book</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -162,7 +168,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../intro.html">
-                    Programming Psychological Experiments using  OpenSesame and python (academic year 2023-2024)
+                    Programming Psychological Experiments using  OpenSesame and python (academic year 2025-2026)
                 </a>
             </li>
         </ul>
@@ -289,6 +295,119 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/henkvs/experimentation_i_2526/main?urlpath=tree/content/.solutions_book/solutions.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/henkvs/experimentation_i_2526/blob/main/content/.solutions_book/solutions.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/henkvs/experimentation_i_2526" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/henkvs/experimentation_i_2526/edit/main/content/.solutions_book/solutions.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/henkvs/experimentation_i_2526/issues/new?title=Issue%20on%20page%20%2Fcontent/.solutions_book/solutions.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -598,25 +717,11 @@ document.write(`
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># student from WG 101</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># student from WG 101</span>
 <span class="c1"># var.width stores width of the screen set in the experiment</span>
 <span class="c1"># Calculate new positions by calculating the proportion of this width</span>
 <span class="n">var</span><span class="o">.</span><span class="n">target_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">target_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">var</span><span class="o">.</span><span class="n">width</span>
 <span class="n">var</span><span class="o">.</span><span class="n">dist_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">dist_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">var</span><span class="o">.</span><span class="n">width</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># student from WG 101</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># var.width stores width of the screen set in the experiment</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Calculate new positions by calculating the proportion of this width</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">var</span><span class="o">.</span><span class="n">target_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">target_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">var</span><span class="o">.</span><span class="n">width</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">var</span><span class="o">.</span><span class="n">dist_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">dist_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">var</span><span class="o">.</span><span class="n">width</span>
-
-<span class="ne">NameError</span>: name &#39;var&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -648,7 +753,7 @@ document.write(`
 <h3>Exercise 1. Print welcome text<a class="headerlink" href="#exercise-1-print-welcome-text" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -665,7 +770,7 @@ Hello teacher
 <h3>Exercise 2. Compute gross pay<a class="headerlink" href="#exercise-2-compute-gross-pay" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hours</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter Hours: &quot;</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hours</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter Hours: &quot;</span><span class="p">))</span>
 <span class="n">rate</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter Rate: &quot;</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pay: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">hours</span><span class="o">*</span><span class="n">rate</span><span class="p">))</span>
 
@@ -694,7 +799,7 @@ Pay:  25.0
 <h3>Exercise 3. Numeric calculations<a class="headerlink" href="#exercise-3-numeric-calculations" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">17</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">17</span>
 <span class="n">height</span> <span class="o">=</span> <span class="mf">12.0</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">width</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">width</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
@@ -725,7 +830,7 @@ Pay:  25.0
 <h3>Exercise 4. Convert temperature<a class="headerlink" href="#exercise-4-convert-temperature" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">celsius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter temperature in Celsius: &quot;</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">celsius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter temperature in Celsius: &quot;</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Temperature in Fahrenheit: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">celsius</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">32</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -742,7 +847,7 @@ Temperature in Fahrenheit: 86.0
 <h3>Exercise 5. Convert reaction time<a class="headerlink" href="#exercise-5-convert-reaction-time" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="n">RT</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter reaction time value in ms (between 1 and 2000 ms): &quot;</span><span class="p">))</span>
 <span class="n">RTinv</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="o">-</span><span class="mi">1000</span> <span class="o">/</span> <span class="n">RT</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">RTlog</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">RT</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
@@ -756,7 +861,7 @@ Temperature in Fahrenheit: 86.0
 <h3>Exercise 6. Combine reaction time and accuracy information<a class="headerlink" href="#exercise-6-combine-reaction-time-and-accuracy-information" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">RT</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter average reaction time value in ms (between 1 and 2000 ms): &quot;</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">RT</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter average reaction time value in ms (between 1 and 2000 ms): &quot;</span><span class="p">))</span>
 <span class="n">ACC</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter average accuracy score as proportion (between 0 and 1): &quot;</span><span class="p">))</span>
 <span class="n">IES</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">RT</span><span class="o">/</span><span class="n">ACC</span><span class="p">)</span>
 <span class="n">PEp</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">ACC</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
@@ -796,7 +901,7 @@ When combining an RT of 45 ms and an ACC of 0.5 (= 50.0% errors), the IES score 
 <p>We add a <code class="docutils literal notranslate"><span class="pre">var_init</span></code> python inline object right before the block_loop to initialize the value for the variable <code class="docutils literal notranslate"><span class="pre">var.missing</span></code>. Setting this variable outide the block loop avoids resetting it to 0 each time the loop runs.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var</span><span class="o">.</span><span class="n">missing</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span><span class="o">.</span><span class="n">missing</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -809,7 +914,7 @@ When combining an RT of 45 ms and an ACC of 0.5 (= 50.0% errors), the IES score 
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## checkMissing inline should contain the following:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## checkMissing inline should contain the following:</span>
 <span class="n">var</span><span class="o">.</span><span class="n">missing</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">missing</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># one more missing trial</span>
 </pre></div>
 </div>
@@ -817,7 +922,7 @@ When combining an RT of 45 ms and an ACC of 0.5 (= 50.0% errors), the IES score 
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## calculate_rates inline should contain the following:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## calculate_rates inline should contain the following:</span>
 <span class="n">var</span><span class="o">.</span><span class="n">missing_rate</span> <span class="o">=</span> <span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">missing</span><span class="o">/</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">count_trial_sequence</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
 <span class="c1"># notice that we needed to add 1 to the count of trials. This is because the OpenSesame counts trials starting at 0.</span>
 
@@ -839,7 +944,7 @@ When combining an RT of 45 ms and an ACC of 0.5 (= 50.0% errors), the IES score 
 <p>Then, somewhere before you present the trials (e.g. beginning of the experiment) add the following inline script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># EITHER method 1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># EITHER method 1</span>
 <span class="k">if</span> <span class="n">var</span><span class="o">.</span><span class="n">subject_parity</span> <span class="o">==</span> <span class="s2">&quot;odd&quot;</span><span class="p">:</span>
   <span class="n">var</span><span class="o">.</span><span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;version 1&quot;</span>
   <span class="n">var</span><span class="o">.</span><span class="n">corresp_red</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
@@ -866,6 +971,7 @@ When combining an RT of 45 ms and an ACC of 0.5 (= 50.0% errors), the IES score 
   <span class="n">var</span><span class="o">.</span><span class="n">corresp_green</span> <span class="o">=</span> <span class="s2">&quot;4&quot;</span>
   <span class="n">var</span><span class="o">.</span><span class="n">corresp_blue</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
   <span class="n">var</span><span class="o">.</span><span class="n">corresp_yellow</span> <span class="o">=</span> <span class="s2">&quot;2&quot;</span>
+
 </pre></div>
 </div>
 </div>
@@ -886,7 +992,7 @@ When combining an RT of 45 ms and an ACC of 0.5 (= 50.0% errors), the IES score 
 <h3>Exercise 2. Advanced pay computation (2)<a class="headerlink" href="#exercise-2-advanced-pay-computation-2" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">je</span> <span class="n">hours</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter Hours: &#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">je</span> <span class="n">hours</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter Hours: &#39;</span><span class="p">)</span>
 <span class="n">rate</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter Rate: &#39;</span><span class="p">)</span>
 <span class="k">try</span><span class="p">:</span>
   <span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">hours</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">40</span><span class="p">:</span>
@@ -913,7 +1019,7 @@ Pay:  300.0
 <p>Alternatively, substituting using raise to quit the script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
     <span class="n">hours</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter hours: &quot;</span><span class="p">))</span>
     <span class="n">rate</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter rate: &quot;</span><span class="p">))</span>
 <span class="k">except</span><span class="p">:</span>
@@ -934,7 +1040,7 @@ Pay:  300.0
 If you want to quit the script after an except without an error function you will need to import the sys module:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="k">try</span><span class="p">:</span>
     <span class="n">hours</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter hours: &quot;</span><span class="p">))</span>
@@ -958,7 +1064,7 @@ If you want to quit the script after an except without an error function you wil
 <h3>Exercise 3. Convert scores to grades<a class="headerlink" href="#exercise-3-convert-scores-to-grades" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter your score (between 0.0 and 1.0): &#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter your score (between 0.0 and 1.0): &#39;</span><span class="p">)</span>
 <span class="k">try</span><span class="p">:</span>
   <span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="nb">float</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Bad score&#39;</span><span class="p">)</span>
@@ -981,7 +1087,7 @@ If you want to quit the script after an except without an error function you wil
 <p>Alternatively, using raise:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
     <span class="n">grade</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter score: &quot;</span><span class="p">))</span>
 <span class="k">except</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bad score&quot;</span><span class="p">)</span>
@@ -1006,7 +1112,7 @@ If you want to quit the script after an except without an error function you wil
 <p>Or again using sys.exit():</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="k">try</span><span class="p">:</span>
     <span class="n">grade</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter score: &quot;</span><span class="p">))</span>
@@ -1035,7 +1141,7 @@ If you want to quit the script after an except without an error function you wil
 <h3>Exercise 4. Check the age of your participant<a class="headerlink" href="#exercise-4-check-the-age-of-your-participant" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Your name: &#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Your name: &#39;</span><span class="p">)</span>
 <span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Your age in years: &#39;</span><span class="p">)</span>
 <span class="k">try</span><span class="p">:</span>
   <span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
@@ -1077,7 +1183,7 @@ If you want to quit the script after an except without an error function you wil
 <h3>Exercise 4. Check age of your participant<a class="headerlink" href="#exercise-4-check-age-of-your-participant" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_age</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_age</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
     <span class="k">return</span> <span class="s2">&quot;You are too young for this experiment.&quot;</span>
   <span class="k">elif</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
@@ -1121,7 +1227,7 @@ If you want to quit the script after an except without an error function you wil
 <p><code class="docutils literal notranslate"><span class="pre">play_movie</span></code> inline is changed to include the following:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
 <span class="kn">import</span> <span class="nn">numpy</span>
 <span class="kn">import</span> <span class="nn">pygame</span>
 <span class="c1"># Full path to the video file in file pool</span>
@@ -1165,7 +1271,7 @@ If you want to quit the script after an except without an error function you wil
 <p>In the Run tab of the <code class="docutils literal notranslate"><span class="pre">play_movie</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
 <span class="kn">import</span> <span class="nn">numpy</span>
 <span class="kn">import</span> <span class="nn">pygame</span>
 <span class="c1"># Full path to the video file in file pool</span>
@@ -1210,7 +1316,7 @@ If you want to quit the script after an except without an error function you wil
 <p>In the Prepare tab of the <code class="docutils literal notranslate"><span class="pre">play_movie</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">myclocktick</span><span class="p">(</span><span class="n">foo</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">myclocktick</span><span class="p">(</span><span class="n">foo</span><span class="p">):</span>
   <span class="c1">#inspired by clock.tick</span>
   <span class="c1">#see https://stackoverflow.com/questions/34383559/pygame-clock-tick-vs-framerate-in-game-main-loop</span>
   <span class="k">if</span> <span class="n">var</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;prevt&#39;</span><span class="p">):</span>
@@ -1245,7 +1351,7 @@ If you want to quit the script after an except without an error function you wil
 <p>solution can be found <a class="reference external" href="https://github.com/aksonai/py4e/tree/master/ch05">here</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -1305,7 +1411,7 @@ If you want to quit the script after an except without an error function you wil
 <h3>Exercise 4. Print moving text<a class="headerlink" href="#exercise-4-print-moving-text" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">41</span><span class="p">):</span>
     <span class="n">fill</span> <span class="o">=</span> <span class="n">fill</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span>
@@ -1325,7 +1431,7 @@ If you want to quit the script after an except without an error function you wil
 <h3>Exercise 5. Print a Christmas tree<a class="headerlink" href="#exercise-5-print-a-christmas-tree" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_tree</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_tree</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
     <span class="c1"># Loop through the rows of the tree</span>
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
         <span class="c1"># Print spaces before the asterisks to center the tree</span>
@@ -1360,7 +1466,7 @@ If you want to quit the script after an except without an error function you wil
 <p>Step 1: Initialize two variables and set the break-if statement</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var</span><span class="o">.</span><span class="n">stop</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># abort the Conditions loop when the value is 1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span><span class="o">.</span><span class="n">stop</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># abort the Conditions loop when the value is 1</span>
 <span class="n">incorrect</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># record the number of successive incorrect trials</span>
 </pre></div>
 </div>
@@ -1370,7 +1476,7 @@ If you want to quit the script after an except without an error function you wil
 <p>Step 2: Update variables based on the response of current trial</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert these codes into inline_script item &quot;process_trial&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert these codes into inline_script item &quot;process_trial&quot;</span>
 <span class="k">if</span> <span class="n">var</span><span class="o">.</span><span class="n">num_correct</span> <span class="o">!=</span> <span class="n">var</span><span class="o">.</span><span class="n">num_total</span><span class="p">:</span> 
     <span class="n">incorrect</span> <span class="o">=</span> <span class="n">incorrect</span> <span class="o">+</span> <span class="mi">1</span>
     <span class="k">if</span> <span class="n">incorrect</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
@@ -1390,7 +1496,7 @@ If you want to quit the script after an except without an error function you wil
 <p>Step 1: Create a new variable “var.seq_reversed” to store the reversed sequence</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># (1) This can be achieved by iteratively adding each character in var.seq_presented into var.seq_reversed in reversed order</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># (1) This can be achieved by iteratively adding each character in var.seq_presented into var.seq_reversed in reversed order</span>
 <span class="n">var</span><span class="o">.</span><span class="n">seq_reversed</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">seq_presented</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
     <span class="n">var</span><span class="o">.</span><span class="n">seq_reversed</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_reversed</span> <span class="o">+</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_presented</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">seq_presented</span><span class="p">)</span><span class="o">-</span><span class="n">i</span><span class="p">]</span>
@@ -1400,7 +1506,7 @@ If you want to quit the script after an except without an error function you wil
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># (2)	A much easier solution is to use negative slicing</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># (2)	A much easier solution is to use negative slicing</span>
 <span class="n">var</span><span class="o">.</span><span class="n">seq_reversed</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_presented</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -1409,7 +1515,7 @@ If you want to quit the script after an except without an error function you wil
 <p>Step 2: Modify the conditional and loop statements related to feedbacks</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">response</span> <span class="o">==</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_reversed</span><span class="p">):</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">response</span> <span class="o">==</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_reversed</span><span class="p">):</span> 
     <span class="n">var</span><span class="o">.</span><span class="n">fbtext</span> <span class="o">=</span> <span class="s2">&quot;Correct sequence&quot;</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">var</span><span class="o">.</span><span class="n">fbtext</span> <span class="o">=</span> <span class="s2">&quot;Incorrect sequence&quot;</span>
@@ -1419,7 +1525,7 @@ If you want to quit the script after an except without an error function you wil
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">response</span><span class="p">)):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">response</span><span class="p">)):</span>
     <span class="k">if</span> <span class="n">var</span><span class="o">.</span><span class="n">response</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_reversed</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span> 
         <span class="n">var</span><span class="o">.</span><span class="n">num_correct</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">num_correct</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
@@ -1432,7 +1538,7 @@ If you want to quit the script after an except without an error function you wil
 <p>The following code counts number of correct letters while ignoring duplicates. Note, when combining this with Exercise 2, you might have to use ‘var.seq_reversed’.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">seq_check</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_presented</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">seq_check</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">seq_presented</span> 
 <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">var</span><span class="o">.</span><span class="n">response</span><span class="p">:</span> 
     <span class="k">if</span> <span class="p">(</span><span class="n">seq_check</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">char</span><span class="p">))</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span> 
         <span class="n">var</span><span class="o">.</span><span class="n">num_correct</span> <span class="o">=</span> <span class="n">var</span><span class="o">.</span><span class="n">num_correct</span> <span class="o">+</span> <span class="mi">1</span>
@@ -1445,7 +1551,7 @@ If you want to quit the script after an except without an error function you wil
 Also note that the <code class="docutils literal notranslate"><span class="pre">set</span></code> function is often used in Python to remove duplicates, but it does not preserve order.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Option</span> <span class="mf">1.</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Option</span> <span class="mf">1.</span>
 
 <span class="c1"># code builds a new string t using unique letters within a string str. It does this in the order of letters found in str. </span>
 
@@ -1479,7 +1585,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 <h3>Exercise 1. Extract substring<a class="headerlink" href="#exercise-1-extract-substring" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text1</span> <span class="o">=</span> <span class="s2">&quot;X-DSPAM-Confidence:0.8475&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text1</span> <span class="o">=</span> <span class="s2">&quot;X-DSPAM-Confidence:0.8475&quot;</span>
 <span class="n">col_index</span> <span class="o">=</span> <span class="n">text1</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
 <span class="n">num</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">text1</span><span class="p">[</span><span class="n">col_index</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
@@ -1494,7 +1600,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 <p>We provide 3 solutions that handle the reduction of whitespaces between words differently</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text2</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text2</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
 
 <span class="n">text2</span> <span class="o">=</span> <span class="n">text2</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 <span class="n">text2</span> <span class="o">=</span> <span class="n">text2</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;setece&quot;</span><span class="p">,</span> <span class="s2">&quot;sentence&quot;</span><span class="p">)</span>
@@ -1514,7 +1620,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
 <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;setece&#39;</span><span class="p">,</span> <span class="s1">&#39;sentence&#39;</span><span class="p">)</span>
 <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;   &#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="c1"># first reduce 3 whitespaces to 2</span>
@@ -1532,7 +1638,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
 
 <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;setece&#39;</span><span class="p">,</span> <span class="s1">&#39;sentence&#39;</span><span class="p">)</span>
@@ -1550,7 +1656,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;  This is a  setece      with  a typo and   too many  spaces &quot;</span>
 <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -1566,7 +1672,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 <h3>Exercise 3. Create a looping text<a class="headerlink" href="#exercise-3-create-a-looping-text" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#s = &quot;1234&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#s = &quot;1234&quot;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Look at this moving text!!!!!!!!!!!!!!!!&quot;</span>
 
 <span class="kn">import</span> <span class="nn">time</span>
@@ -1601,7 +1707,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
 
 <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Look at this moving text!!!!!!!!!!!!!!!!&quot;</span>
 <span class="k">for</span> <span class="n">repeat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
@@ -1652,7 +1758,8 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 <h3>Exercise 4. Using tuples in the grade calculation<a class="headerlink" href="#exercise-4-using-tuples-in-the-grade-calculation" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calc_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="k">def</span> <span class="nf">calc_grade</span><span class="p">(</span><span class="n">score</span><span class="p">):</span>
   <span class="c1"># define grades and scores tuples</span>
   <span class="n">grades</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">)</span>
   <span class="n">scores</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
@@ -1742,7 +1849,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 <h1>Extra Python exercises: Multiplication Table<a class="headerlink" href="#extra-python-exercises-multiplication-table" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
@@ -1751,7 +1858,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># Change this to any integer you want</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
@@ -1762,7 +1869,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 3</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 3</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># Change this to any integer you want</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
@@ -1774,7 +1881,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4</span>
 <span class="k">def</span> <span class="nf">print_multiplication_table</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">m</span>
@@ -1787,7 +1894,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5</span>
 <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The multiplication table of </span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">()</span> <span class="c1"># Optional for readability</span>
@@ -1806,7 +1913,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 6</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 6</span>
 <span class="n">group4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
 <span class="n">group5</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
 
@@ -1829,7 +1936,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 7</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 7</span>
 <span class="n">group4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
 <span class="n">group5</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
 
@@ -1857,7 +1964,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 8</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 8</span>
 <span class="k">def</span> <span class="nf">test_multiplication_table</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
     <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
@@ -1878,7 +1985,7 @@ Also note that the <code class="docutils literal notranslate"><span class="pre">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 9 and 10</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 9 and 10</span>
 
 <span class="k">def</span> <span class="nf">test_multiplication_table</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
     <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
@@ -2127,7 +2234,7 @@ Your score is 83.33333333333334%</p>
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book community
+By Jeshua Tromp & Henk van Steenbergen
 </p>
 
   </div>
@@ -2137,7 +2244,7 @@ By The Jupyter Book community
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright Leiden University; Attribution: Jeshua Tromp &amp; Henk van Steenbergen, Leiden University, with CC BY-NC-SA 2.0 license.
       <br/>
     
   </p>
