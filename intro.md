@@ -1,12 +1,14 @@
 # Programming Psychological Experiments using  OpenSesame and python (academic year 2025-2026)
 
+> **Note**:  This course has been updated to use OpenSesame 4.1. Because version 4 may introduce some backwards-incompatible changes (e.g., in variable referencing, conditional syntax, logging behaviour), please be aware that some examples from earlier versions of this book will no longer work unchanged in this version.
+
 **Previous versions of this material course**
-- [Course Material 2023-2025](https://henkvs.github.io/experimentation_i_2324/intro.html)
-- [Course Material 2022-2023](https://jeshuat.github.io/Experimentation1/intro.html)
+- [Course Material 2023-2025, OpenSesame version 3](https://henkvs.github.io/experimentation_i_2324/intro.html)
+- [Course Material 2022-2023, OpenSesame version 3 + python for data science](https://jeshuat.github.io/Experimentation1/intro.html)
 
 **Welcome**
 
-Welcome to this JupyterBook, which provides the course material covered partially in the course [Experimentation I: Programming Psychological Experiments](https://studiegids.universiteitleiden.nl/en/courses/121581/experimentation-i-programming-psychological-experiments). This course is part of the [research master program in Psychology](https://www.universiteitleiden.nl/en/education/study-programmes/master/psychology-research) at [Leiden University](http://leidenuniv.nl/) in the Netherlands.
+Welcome to this JupyterBook, which provides the course material covered in the course [Experimentation I: Programming Psychological Experiments](https://studiegids.universiteitleiden.nl/en/courses/121581/experimentation-i-programming-psychological-experiments). This course is part of the [research master program in Psychology](https://www.universiteitleiden.nl/en/education/study-programmes/master/psychology-research) at [Leiden University](http://leidenuniv.nl/) in the Netherlands.
 
 Using this material, you can learn how to build experiments using OpenSesame and get a primer into basic coding using python. Like the software packages we will be using, all of the material in this course is open and freely available. Please note that the compiled JupyterBook is a collection of teaching material from various sources, and it heavily relies on and integrates earlier work generously provided by others online. We always acknowledge the work of these contributors whenever we use their material. The major contributors are mentioned below.
 
@@ -14,7 +16,7 @@ Using this material, you can learn how to build experiments using OpenSesame and
 
 Make sure you save your work in a well-organized folder structure. Some of the later exercises build on work you did earlier during the course.
 
-We have provided solutions to all exercises [here](https://henkvs.github.io/experimentation_i_2324/content/.solutions_book/solutions.html). Just keep in mind that there are often multiple ways to solve a problem, so if you come up with a different solution, that doesn't necessarily mean you're wrong. Don't forget that figuring out how to solve a problem on your own is an important part of the learning process and can be incredibly fulfilling. Embrace the challenge and take pride in your ability to find solutions independently!
+We have provided solutions to all exercises [here](https://henkvs.github.io/experimentation_i_2526/content/.solutions_book/solutions.html). Just keep in mind that there are often multiple ways to solve a problem, so if you come up with a different solution, that doesn't necessarily mean you're wrong. Don't forget that figuring out how to solve a problem on your own is an important part of the learning process and can be incredibly fulfilling. Embrace the challenge and take pride in your ability to find solutions independently!
 
 - If you're taking this course in-person at Leiden University: This course material is partially covered in an intensive eight-week course at Leiden University, where you will participate in plenary and practical sessions to receive live feedback and help. No prior programming knowledge is assumed.
 
@@ -22,7 +24,7 @@ We have provided solutions to all exercises [here](https://henkvs.github.io/expe
 
 **Acknowledgements**
 
-Our course is a renewed version of an [earlier course](https://studiegids.universiteitleiden.nl/en/courses/110025/experimentation-i-programming-psychological-experiments) that Henk led at Leiden University for over a decade. This course focused on E-Prime and accompanied the book [The E-Primer](https://www.e-primer.com/), which was written together with Michiel Spape, Rinus Verdonschot, and Saskia van Dantzig, my esteemed colleagues at Leiden University in the early days. Although the current course is more focused on coding than the previous course, we still owe a lot of inspiration from the earlier book and even have reused parts of this book in the current course. Our initial discussions with Dirk van Morselaar (VU Amsterdam) were also really influential and helped us to make python coding a central part of this course.
+Our course is a renewed version of an [earlier course](https://studiegids.universiteitleiden.nl/en/courses/110025/experimentation-i-programming-psychological-experiments) that Henk led at Leiden University for over a decade. This course focused on E-Prime and accompanied the book [The E-Primer](https://www.e-primer.com/), which was written together with Michiel Spape, Rinus Verdonschot, and Saskia van Dantzig, Henk's esteemed colleagues at Leiden University in the early days. Although the current   course is more focused on coding than the previous course, we still owe a lot of inspiration from the earlier book and even have reused parts of this book in the current course. Our initial discussions with Dirk van Morselaar (VU Amsterdam) were also really influential and helped us to make python coding a central part of this course.
 
 Additionally, many of the lessons and python exercises in this course are based on the ["Python for Everyone" course](www.py4e.com) provided by Charles R. Severance. We are grateful for the opportunity to integrate his open material into this course.
 
@@ -34,7 +36,7 @@ Finally, we are grateful to the teaching team at Leiden University who have cont
 
 Last but not least, we are grateful to the board of the faculty of Social and Behavioral Sciences at Leiden University for awarding us a Grass shoots grant, which allowed us to develop the teaching material for this course.
 
-**Leiden, January 2024**
+**Leiden, January 2026**
 
 **Jeshua Tromp, PhD student**
 
