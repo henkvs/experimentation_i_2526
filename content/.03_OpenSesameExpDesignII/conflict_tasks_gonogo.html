@@ -601,7 +601,13 @@ document.write(`
 <p>To start this task, we will use the extended template to create the general structure of the experiment. Click on Extended template in the Overview window. Begin by changing the title of the experiment to “Smoking Go-NoGo” by clicking on the blue main title. The resolution will need changing to your monitor’s dimensions, and the default text size should be 32 px. Permanently delete the experimental_loop so we can change the number of trials later without having to change all the blocks.</p>
 <section id="adding-images-to-the-file-pool">
 <h3>Adding images to the file pool<a class="headerlink" href="#adding-images-to-the-file-pool" title="Permalink to this heading">#</a></h3>
-<p>This task will use images (these can be downloaded <a class="reference external" href="https://osf.io/awjcn">here</a>) as the background in order to manipulate the type of cues the participant is viewing. If we want to use images in OpenSesame, we need to make them accessible. To do this, we need to add them to the file pool <img alt="" src="../../_images/image66.png" />, and click the small green add symbol. This will allow you to browse your computer and select the files. When you have added all four images, the file pool should look like this:</p>
+<p>This task will use four images as the background in order to manipulate the type of cues the participant is viewing.</p>
+<p>Please download them here:
+<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CF1.jpg">F1.jpg</a>
+<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CF11.jpg">F11.jpg</a>
+<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CN1.jpg">N1.jpg</a>
+<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CN11.jpg">N11.jpg</a></p>
+<p>If we want to use images in OpenSesame, we need to make them accessible. To do this, we need to add them to the file pool <img alt="" src="../../_images/image66.png" />, and click the small green add symbol. This will allow you to browse your computer and select the files. When you have added all four images, the file pool should look like this:</p>
 <p><img alt="" src="../../_images/image38.png" /></p>
 </section>
 <section id="creating-the-background-screen">
@@ -632,7 +638,7 @@ document.write(`
 </section>
 <section id="test-the-experiment">
 <h3>Test the experiment<a class="headerlink" href="#test-the-experiment" title="Permalink to this heading">#</a></h3>
-<p>At this point, we can test the experiment to make sure it works in its current form. If everything has been defined correctly, you should be able to quick run the experiment <img alt="" src="../../_images/image712.png" />and complete five trials. Remember you should avoid making a response when the letter ‘W’ appears.</p></p>
+<p>At this point, we can test the experiment to make sure it works in its current form. If everything has been defined correctly, you should be able to quick run the experiment <img alt="" src="../../_images/image71.png" />and complete five trials. Remember you should avoid making a response when the letter ‘W’ appears.</p></p>
 </section>
 <section id="creating-the-experimental-loop">
 <h3>Creating the experimental_loop<a class="headerlink" href="#creating-the-experimental-loop" title="Permalink to this heading">#</a></h3>
@@ -654,7 +660,7 @@ Order should be kept as random, as we want a new order of experimental blocks pe
 <h3>Controlling when the breaks are presented<a class="headerlink" href="#controlling-when-the-breaks-are-presented" title="Permalink to this heading">#</a></h3>
 <p>In the last experiment, we stopped feedback_1 and end_of_break from appearing after the final block. Each block was identical, so we just presented each block sequentially and used the number of the fourth block to stop the two components from appearing. However, this time it is not so simple. We cannot simply label each block 1 to 5 as they are being randomly presented. What we need is to label each block as we go along so the background is free to be randomly presented. We can do this by inserting two inline script components <img alt="" src="../../_images/image551.png" />called block_count between reset_feedback_1 and block_loop_1 in experimental_loop. Here we need to write var.block = var.block + 1 in the prepare tab. For each loop around experimental_loop this assigns var.block to equal the previous value for block plus one. The positioning of these two inline script components is very important. We want block_start to be outside of experimental_loop as we do not want it to be reset to 0 on on each cycle around the loop. We also want block_count to be in experimental_group and not block_loop_1. If we placed it in block_loop_1, it would increase by one on each trial. We want it to increase by one on each block, so by the time we get to the fifth block, block will equal 5. This means that we can enter some short Python code into block_sequence_1 to control when feedback_1 and end_of_break are run. Where it says always, change it to [block] &lt; 5 for feedback_1 and end_of_break. The block_sequence_1 component should now look like this:</p>
 <p><img alt="" src="../../_images/image48.png" /></p>
-<p>Test the experiment one last time before we increase the number of trials. Use quickrun <img alt="" src="../../_images/image712.png" /> to test the experiment in a separate screen. The two break screens should not appear after the final break.</p>
+<p>Test the experiment one last time before we increase the number of trials. Use quickrun <img alt="" src="../../_images/image71.png" /> to test the experiment in a separate screen. The two break screens should not appear after the final break.</p>
 </section>
 <section id="increase-the-number-of-trials">
 <h3>Increase the number of trials<a class="headerlink" href="#increase-the-number-of-trials" title="Permalink to this heading">#</a></h3>
@@ -662,7 +668,7 @@ Order should be kept as random, as we want a new order of experimental blocks pe
 </section>
 <section id="test-the-experiment-full-screen">
 <h3>Test the experiment full screen<a class="headerlink" href="#test-the-experiment-full-screen" title="Permalink to this heading">#</a></h3>
-<p>You can now run the experiment full screen <img alt="" src="../../_images/image712.png" /> to get a data set ready to analyse in the next section. At 750 trials, this is a pretty hefty task so it will take approximately 20-30 minutes to complete.</p>
+<p>You can now run the experiment full screen <img alt="" src="../../_images/image71.png" /> to get a data set ready to analyse in the next section. At 750 trials, this is a pretty hefty task so it will take approximately 20-30 minutes to complete.</p>
 </section>
 </section>
 <section id="analysing-the-data-from-the-task">

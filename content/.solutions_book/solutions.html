@@ -720,16 +720,16 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># student from WG 101</span>
 <span class="c1"># var.width stores width of the screen set in the experiment</span>
 <span class="c1"># Calculate new positions by calculating the proportion of this width</span>
-<span class="n">var</span><span class="o">.</span><span class="n">target_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">target_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">var</span><span class="o">.</span><span class="n">width</span>
-<span class="n">var</span><span class="o">.</span><span class="n">dist_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var</span><span class="o">.</span><span class="n">dist_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">var</span><span class="o">.</span><span class="n">width</span>
+<span class="n">target_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">target_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">width</span>
+<span class="n">dist_pos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">dist_pos</span><span class="p">)</span> <span class="o">*</span> <span class="n">width</span>
 </pre></div>
 </div>
 </div>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>And within the <code class="docutils literal notranslate"><span class="pre">target</span></code>  object, ensure you refer to each of these new positions using the squared-bracket notation (remains unchanged).</p></li>
+<li><p>And within the <code class="docutils literal notranslate"><span class="pre">target</span></code>  object, ensure you refer to each of these new positions using the curly-brace notation (remains unchanged).</p></li>
 </ol>
-<p>Note that one disadvantage of the solution above is that we OVERWRITE the original information in target_pos so this information is not logged anymore. If you want to keep the original information it is better to create a new variable (e.g. <code class="docutils literal notranslate"><span class="pre">target_pos2</span></code> and use the squared-bracket notation to refer to this variable instead).</p>
+<p>Note that one disadvantage of the solution above is that we OVERWRITE the original information in target_pos so this information is not logged anymore. If you want to keep the original information it is better to create a new variable (e.g. <code class="docutils literal notranslate"><span class="pre">target_pos2</span></code> and use the curly-brace notation to refer to this variable instead).</p>
 </section>
 <section id="exercise-2-track-the-number-of-trials-per-block">
 <h3>Exercise 2. Track the number of trials per block<a class="headerlink" href="#exercise-2-track-the-number-of-trials-per-block" title="Permalink to this heading">#</a></h3>
@@ -880,11 +880,11 @@ When combining an RT of 45 ms and an ACC of 0.5 (= 50.0% errors), the IES score 
 </section>
 <section id="exercise-8-12-repeat-in-opensesame">
 <h3>Exercise 8-12. Repeat in OpenSesame<a class="headerlink" href="#exercise-8-12-repeat-in-opensesame" title="Permalink to this heading">#</a></h3>
-<p>Exercise 8 (Print welcome text) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2324/blob/main/content/solutions/Python_to_OS_Ex1.osexp">here</a></p>
-<p>Exercise 9 (Compute gross pay) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2324/blob/main/content/solutions/Python_to_OS_Ex2.osexp">here</a></p>
-<p>Exercise 10 (Convert temperature) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2324/blob/main/content/solutions/Python_to_OS_Ex4.osexp">here</a></p>
-<p>Exercise 11 (Convert reaction time) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2324/blob/main/content/solutions/Python_to_OS_Ex5.osexp">here</a></p>
-<p>Exercise 12 (Combine reaction time and accuracy information) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2324/blob/main/content/solutions/Python_to_OS_Ex6.osexp">here</a></p>
+<p>Exercise 8 (Print welcome text) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content/solutions/Python_to_OS_Ex1_OS41.osexp">here</a></p>
+<p>Exercise 9 (Compute gross pay) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content/solutions/Python_to_OS_Ex2_OS41.osexp">here</a></p>
+<p>Exercise 10 (Convert temperature) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content/solutions/Python_to_OS_Ex4_OS41.osexp">here</a></p>
+<p>Exercise 11 (Convert reaction time) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content/solutions/Python_to_OS_Ex5_OS41.osexp">here</a></p>
+<p>Exercise 12 (Combine reaction time and accuracy information) solution: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content/solutions/Python_to_OS_Ex6_OS41.osexp">here</a></p>
 </section>
 </section>
 </section>
