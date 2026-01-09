@@ -535,6 +535,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#go-nogo-task-in-opensesame">Go-nogo task in OpenSesame</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excercise-1-counterbalancing-even-or-odd-participant-numbers">Excercise 1. Counterbalancing: Even or odd participant numbers</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excercise-2-show-mapping-of-correct-keys-on-the-screen">Excercise 2. Show mapping of correct keys on the screen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excercise-3-using-a-black-background-stimulus-for-the-neutral-cue-condition">Excercise 3. Using a black background stimulus for the neutral cue condition</a></li>
 </ul>
 </li>
 </ul>
@@ -690,17 +691,22 @@ document.write(`
 <h1>Chapter 3 - Experimental Design II<a class="headerlink" href="#chapter-3-experimental-design-ii" title="Permalink to this heading">#</a></h1>
 <section id="go-nogo-task-in-opensesame">
 <h2>Go-nogo task in OpenSesame<a class="headerlink" href="#go-nogo-task-in-opensesame" title="Permalink to this heading">#</a></h2>
-<p>Solution tutorial go-nogo task: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/tree/master/content/solutions/Strooptask_os41.osexp">here</a></p>
+<p>Solution tutorial go-nogo task: <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/tree/master/content/solutions/Strooptask_OS41.osexp">here</a></p>
 <section id="excercise-1-counterbalancing-even-or-odd-participant-numbers">
 <h3>Excercise 1. Counterbalancing: Even or odd participant numbers<a class="headerlink" href="#excercise-1-counterbalancing-even-or-odd-participant-numbers" title="Permalink to this heading">#</a></h3>
 <p>See files below (ignore updates in stimulus)</p>
 </section>
 <section id="excercise-2-show-mapping-of-correct-keys-on-the-screen">
 <h3>Excercise 2. Show mapping of correct keys on the screen<a class="headerlink" href="#excercise-2-show-mapping-of-correct-keys-on-the-screen" title="Permalink to this heading">#</a></h3>
-<p>Solution that requires copying existing objects <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2324/blob/main/content/solutions/Strooptask_counterbalancing_inefficient.osexp">here</a>:</p>
+<p>Solution that requires copying existing objects <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/tree/master/content/solutions/Strooptask_counterbalancing_inefficient_OS41.osexp">here</a>:</p>
 <p><img alt="" src="../../_images/solution_counterbalance_1.png" /></p>
-<p>More elegant solution <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2324/blob/main/content/solutions/Strooptask_counterbalancing_compact.osexp">here</a>:</p>
+<p>More elegant solution <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/tree/master/content/solutions/Strooptask_counterbalancing_compact_OS41.osexp">here</a>:</p>
 <p><img alt="" src="../../_images/solution_counterbalance_2.png" /></p>
+</section>
+<section id="excercise-3-using-a-black-background-stimulus-for-the-neutral-cue-condition">
+<h3>Excercise 3. Using a black background stimulus for the neutral cue condition<a class="headerlink" href="#excercise-3-using-a-black-background-stimulus-for-the-neutral-cue-condition" title="Permalink to this heading">#</a></h3>
+<p>Download the black background stimulus <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/tree/master/content/solutions/black.jpg">here</a></p>
+<p>Then add it to the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Pool</span></code> and include it in the proper locations of the loops. Remove the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">if</span></code> conditionals in all relevant sketchpad objects in the trial.</p>
 </section>
 </section>
 </section>
@@ -755,12 +761,14 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+<span class="c1"># alternative:</span>
+<span class="c1">#print(f&quot;Hello {name}&quot;)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Enter your name: teacher
-Hello teacher
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello dsd
+Hello dsd
 </pre></div>
 </div>
 </div>
@@ -2110,6 +2118,7 @@ Your score is 83.33333333333334%</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#go-nogo-task-in-opensesame">Go-nogo task in OpenSesame</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excercise-1-counterbalancing-even-or-odd-participant-numbers">Excercise 1. Counterbalancing: Even or odd participant numbers</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excercise-2-show-mapping-of-correct-keys-on-the-screen">Excercise 2. Show mapping of correct keys on the screen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excercise-3-using-a-black-background-stimulus-for-the-neutral-cue-condition">Excercise 3. Using a black background stimulus for the neutral cue condition</a></li>
 </ul>
 </li>
 </ul>
