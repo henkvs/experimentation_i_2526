@@ -1510,7 +1510,7 @@ if (typeof version == 'undefined') {
 <p><img alt="image info" src="../../../_images/DefaultOverview.PNG" /></p>
 <p>We will start with building the framework of our experiment. Since we want to get multiple trials for each testing chapter, we start with the outer most layer: the <strong>block loop</strong>. Insert a block loop after “experiment”, and you should see the following:</p>
 <p><img alt="image info" src="../../../_images/block_loop_empty.PNG" /></p>
-<p>From here, we define O1_Me and O1_You as choice 1, and O2_Me and O2_You as choice 2. We make a second row where we reverse the order of the choices, and also define which of the two is the fair choice. As of now, we have two trials. We ofcourse want to have more than two trials presented to Player 1. Change the “repeat” parameter to repeat each cycle 5 times.</p>
+<p>From here, we define O1_Me and O1_You as choice 1, and O2_Me and O2_You as choice 2. We make a second row where we reverse the order of the choices, and also define which of the two is the fair choice. As of now, we have two trials. We of course want to have more than two trials presented to Player 1. Change the “repeat” parameter to repeat each cycle 5 times.</p>
 <p><img alt="image info" src="../../../_images/block_loop.PNG" /></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -2483,8 +2483,8 @@ if (typeof version == 'undefined') {
 <h2>The Decision of Player 1<a class="headerlink" href="#the-decision-of-player-1" title="Permalink to this heading">#</a></h2>
 <section id="sketchpad-item-for-presenting-player-1-with-two-options">
 <h3>1: Sketchpad item for presenting Player 1 with two options<a class="headerlink" href="#sketchpad-item-for-presenting-player-1-with-two-options" title="Permalink to this heading">#</a></h3>
-<p>Add in a Sketchpad item, and call it “DecisionMe”. The DecisionMe should present two offers and wait until the participant decides to press either the numerical key 1 or the numerical key 2. Now you can see why we have two rows of trial defined in the block_loop. We can now simply call the variables O1_Me, O1_You, O2_Me and O2_You. The block_loop makes sure that the O1 offer isn’t always the fair or unfair offer. You can call variables defined in the block_loop by calling the variable name surrounded by brackets ([variable]). Here is the Sketchitem how we designed it:</p>
-<p><img alt="image info" src="../../../_images/DecisionMe.PNG" /></p>
+<p>Add in a Sketchpad item, and call it “DecisionMe”. The DecisionMe should present two offers and wait until the participant decides to press either the numerical key 1 or the numerical key 2. Now you can see why we have two rows of trial defined in the block_loop. We can now simply call the variables O1_Me, O1_You, O2_Me and O2_You. The block_loop makes sure that the O1 offer isn’t always the fair or unfair offer. You can call variables defined in the block_loop by calling the variable name surrounded by curly braces ({variable}). Here is the Sketchitem how we designed it (using penwidth 5 to get solid black borders around the options):</p>
+<p><img alt="" src="../../../_images/2026-01-09_13_42_03.png" /></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id="TEgNCLUgcUwx" data-shufflequestions="False"
@@ -3415,8 +3415,10 @@ if (typeof version == 'undefined') {
 </section>
 <section id="two-sketchpad-items-for-feedback-to-player-1-the-one-which-is-presented-depends-on-the-choice-made-by-player-1">
 <h3>2: Two sketchpad items for feedback to Player 1. The one which is presented depends on the choice made by Player 1<a class="headerlink" href="#two-sketchpad-items-for-feedback-to-player-1-the-one-which-is-presented-depends-on-the-choice-made-by-player-1" title="Permalink to this heading">#</a></h3>
-<p>Now, when Player 1 has made its decision, we want to show the Player which decision it made, just so the Player knows that pressing the response worked. To do that, we will copy the “DecisionMe” sketchpad twice and call those “DecisionMe_feedback1” and “DecisionMe_feedback2”. In one of the sketchpads, we draw a red line around the left box, to indicate that the Player chose that box. In the other sketchpad, we draw a red line around the right box, to indicate that the Player chose that box. To draw the red line you can simply use a red square without fill and draw it around the borders of the decision boxes.</p>
-<p><img alt="image info" src="../../../_images/DecisionMe_feedback.PNG" /></p>
+<p>Now, when Player 1 has made its decision, we want to show the Player which decision it made, just so the Player knows that pressing the response worked. To do that, we will copy the “DecisionMe” sketchpad twice and call those “DecisionMe_feedback1” and “DecisionMe_feedback2”. In one of the sketchpads, we draw a red line around the left box, to indicate that the Player chose that box. In the other sketchpad, we draw a red line around the right box, to indicate that the Player chose that box. To draw the red line you can simply use a red square without fill and draw it around the borders of the decision boxes, like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">draw</span> <span class="n">rect</span> <span class="n">color</span><span class="o">=</span><span class="n">red</span> <span class="n">fill</span><span class="o">=</span><span class="mi">0</span> <span class="n">h</span><span class="o">=</span><span class="mi">256</span> <span class="n">penwidth</span><span class="o">=</span><span class="mi">5</span> <span class="n">show_if</span><span class="o">=</span><span class="n">always</span> <span class="n">w</span><span class="o">=</span><span class="mi">320</span> <span class="n">x</span><span class="o">=-</span><span class="mi">416</span> <span class="n">y</span><span class="o">=-</span><span class="mi">128</span> <span class="n">z_index</span><span class="o">=</span><span class="mi">0</span>
+</pre></div>
+</div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id="YNsrcnURkyvY" data-shufflequestions="False"
@@ -4341,8 +4343,8 @@ if (typeof version == 'undefined') {
         }
         </script></div>
 </div>
-<p>Now the trial_sequence item we inserted earlier comes in handy. If we go to that item we see that it automatically added all the items we have created so far. We also see a “Run if” column. OpenSesame defines certain variables themselves (see <a class="reference external" href="https://osdoc.cogsci.nl/3.2/manual/variables/#built-in-variables">here</a>), and one of them is the [response] variable, which catalogues which response the Player made. So, if we set “run_if” for “DecisionMe_feedback1” to [response] = 1, this sketchpad will only be presented if the Player presses key 1! Do the same for DecionsMe_feedback 2, and it should look like this:</p>
-<p><img alt="image info" src="../../../_images/trial_sequence_prelim.PNG" /></p>
+<p>Now the trial_sequence item we inserted earlier comes in handy. If we go to that item we see that it automatically added all the items we have created so far. We also see a “Run if” column. OpenSesame defines certain variables themselves (see <a class="reference external" href="https://osdoc.cogsci.nl/4.1/manual/variables/#built-in-variables">here</a>), and one of them is the <code class="docutils literal notranslate"><span class="pre">response</span></code> variable, which stores which response the Player made. So, if we set “run_if” for “DecisionMe_feedback1” to <code class="docutils literal notranslate"><span class="pre">response</span> <span class="pre">==</span> <span class="pre">1</span></code>, this sketchpad will only be presented if the Player presses key 1! Do the same for DecionsMe_feedback 2, and it should look like this:</p>
+<p><img alt="image info" src="../../../_images/2026-01-09_13_54_07.png" /></p>
 </section>
 <section id="a-sketchpad-item-that-is-presented-for-the-duration-that-player-1-waits-for-the-response-of-player-2">
 <h3>3: A sketchpad item that is presented for the duration that Player 1 “waits” for the response of Player 2<a class="headerlink" href="#a-sketchpad-item-that-is-presented-for-the-duration-that-player-1-waits-for-the-response-of-player-2" title="Permalink to this heading">#</a></h3>
@@ -4412,15 +4414,45 @@ if (typeof version == 'undefined') {
 </div>
 </div>
 </div>
-<p>Alright, we have have the body of our Python script that we can use in OpenSesame. Now, there are some OpenSesame specific things that we need to look into. Go back to your OpenSesame UltimatumGame script, and insert an inline_script after the WaitingForOther object. Call this inline_script “OtherDecision”. You will see two tabs: the prepare tab and the run tab. Shortly said, during an experiment the “prepare” script will be ran before the trial starts, and the “run” script will be ran during a trial (for more information see the <a class="reference external" href="https://osdoc.cogsci.nl/3.3/manual/python/about/">OpenSesame website</a>). In our case, what we can already prepare is importing the random.choices() module, and making a list of possible decisions. The actual decision depends on the decision of Player 1, so we will necessarily need to run that in the “run” tab.</p>
-<p>This is our solution to coding the decision of Player 2:</p>
-<p><img alt="image info" src="../../../_images/OtherDecision.PNG" /></p>
-<p>A few things to unpack here in the “run” script. First of all is the way we set the condition:</p>
-<p>var.response == var.Fair_Offer</p>
+<p>Alright, we have have the body of our Python script that we can use in OpenSesame. Now, there are some OpenSesame specific things that we need to look into. Go back to your OpenSesame UltimatumGame script, and insert an inline_script after the WaitingForOther object. Call this inline_script “OtherDecision”. You will see two tabs: the prepare tab and the run tab. Shortly said, during an experiment the “prepare” script will be ran before the trial starts, and the “run” script will be ran during a trial (for more information see the <a class="reference external" href="https://osdoc.cogsci.nl/4.1/manual/prepare-run/">OpenSesame website</a>). In our case, what we can already prepare is importing the random.choices() module, and making a list of possible decisions. The actual decision depends on the decision of Player 1, so we will necessarily need to run that in the “run” tab.</p>
+<p>This is our solution to coding the decision of Player 2 for the Prepare tab:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choices</span>
+
+<span class="n">decision</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Accept&quot;</span><span class="p">,</span> <span class="s2">&quot;Reject&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>And this for the Run tab:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#response = 2</span>
+<span class="c1">#Fair_Offer = 1</span>
+<span class="k">if</span> <span class="n">response</span> <span class="o">==</span> <span class="n">Fair_Offer</span><span class="p">:</span>
+    <span class="n">choice</span> <span class="o">=</span> <span class="n">choices</span><span class="p">(</span><span class="n">decision</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">choice</span> <span class="o">=</span> <span class="n">choices</span><span class="p">(</span><span class="n">decision</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">75</span><span class="p">),</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">choice</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Reject&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s unpack the code in the “run” script. First of all is the way we set the condition:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">response</span> <span class="o">==</span> <span class="n">Fair_Offer</span>
+</pre></div>
+</div>
 <p>Remember that the responses possible are “1” or “2”. If you take a look back at our “block_loop”, you see that we map Fair_Offer on “1” or “2”, depending on which decision box (left or right) has the fair offer. So, if the response is 1, and the Fair_Offer is also 1, then that means that was a fair offer!</p>
-<p>Then, something that you also probably noticed is that we put a <em>var</em> in front of some variables. This is how OpenSesame communicates with the Python environment, and allows us to use the variables in the OpenSesame. OpenSesame has its own (Python-like) scripting language and environment which is separate from the Python environment. Therefore we need to use tricks like these to build a bridge between the two environments (for more information, see <a class="reference external" href="https://osdoc.cogsci.nl/3.3/manual/python/var/">this link</a>).</p>
+<p>Now, if you uncomment the first two lines, you can run the code above multiple times. Experiment with different values of response and Fair_offer. You will see that there is some randomness in what is printed.</p>
 <p>Finally, we have to let Player 1 know what the decision was of Player 2. Therefore, again, we make two sketchpad items. One of which is presented when Player 2 accepts the offer, the other one is presented when Player 2 rejects the offer. Call these sketchpads “AcceptOffer” and “RejectOffer”. These sketchpads should communicate the outcome of Player 2’s decision. Then, go back to the “trial_sequence” object, and change the “Run if” of the “AcceptOffer” and “RejectOffer”:</p>
-<p><img alt="image info" src="../../../_images/trial_sequence_final.PNG" /></p>
+<p><img alt="image info" src="../../../_images/2026-01-09_14_06_41.png" /></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id="hYLgxZHxYFwg" data-shufflequestions="False"
@@ -5367,7 +5399,7 @@ if (typeof version == 'undefined') {
 </section>
 <section id="logging-results-and-running-the-experiment">
 <h2>Logging results and running the experiment<a class="headerlink" href="#logging-results-and-running-the-experiment" title="Permalink to this heading">#</a></h2>
-<p>Now we have everything to run the experiment. However, we are interested in analyzing the results afterwards ofcourse. OpenSesame gives you a really easy way to store every single variable of each trial (including the variables we defined ourselves). Therefore, insert a “logger” item after the RejectOffer and AcceptOffer items. We call the logger item “LogTrials”. Furthermore, it’s also important to don’t start right away with an experiment, but first give instructions. So add instructions before the “block_loop”, and a logger item at the end of the “trial_sequence”, and it should look something like this:</p>
+<p>Now we have everything to run the experiment. However, we are interested in analyzing the results afterwards of course. OpenSesame gives you a really easy way to store every single variable of each trial (including the variables we defined ourselves). Therefore, insert a “logger” item after the RejectOffer and AcceptOffer items. We call the logger item “LogTrials”. Furthermore, it’s also important to don’t start right away with an experiment, but first give instructions. So add instructions before the “block_loop”, and a logger item at the end of the “trial_sequence”, and it should look something like this:</p>
 <p><img alt="image info" src="../../../_images/FinalOverview.PNG" /></p>
 <p>Now we are set to run the experiment, and record everything we want (and way more). Press the green arrow (or use the shortcut “CTRL + R”) to start the experiment. Insert the subject number, and test the experiment.</p>
 <p>The experiment should look something like this:</p>
