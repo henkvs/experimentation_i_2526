@@ -586,9 +586,7 @@ document.write(`
 </section>
 <section id="what-is-the-structure-of-one-trial">
 <h2>What is the structure of one trial?<a class="headerlink" href="#what-is-the-structure-of-one-trial" title="Permalink to this heading">#</a></h2>
-<p>For the structure of each trial, the authors include this helpful diagram on page 1876 (this is cropped slightly):</p>
-<p><img alt="" src="../../_images/image63.png" /></p>
-<p>We can see from the diagram that each trial begins with the presentation of the background for 500ms. In contrast to our two previous tasks, there does not appear to be a fixation cross/dot included in this task. A Go or NoGo cue is then presented on the screen for 200ms. On Go trials, this is a letter ‘M’ superimposed onto the background. On NoGo trials, this is the letter ‘W’. After the offset of the cue, there is a 1300ms period where the participant can make a response. The start of the next trial then begins with the next 500ms screen.</p>
+<p>Each trial begins with the presentation of the background for 500ms. In contrast to our two previous tasks, there does not appear to be a fixation cross/dot included in this task. A Go or NoGo cue is then presented on the screen for 200ms. On Go trials, this is a letter ‘M’ superimposed onto the background. On NoGo trials, this is the letter ‘W’. After the offset of the cue, there is a 1300ms period where the participant can make a response. The start of the next trial then begins with the next 500ms screen.</p>
 </section>
 <section id="what-is-the-structure-of-the-whole-experiment">
 <h2>What is the structure of the whole experiment?<a class="headerlink" href="#what-is-the-structure-of-the-whole-experiment" title="Permalink to this heading">#</a></h2>
@@ -602,11 +600,7 @@ document.write(`
 <section id="adding-images-to-the-file-pool">
 <h3>Adding images to the file pool<a class="headerlink" href="#adding-images-to-the-file-pool" title="Permalink to this heading">#</a></h3>
 <p>This task will use four images as the background in order to manipulate the type of cues the participant is viewing.</p>
-<p>Please download them here:
-<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CF1.jpg">F1.jpg</a>
-<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CF11.jpg">F11.jpg</a>
-<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CN1.jpg">N1.jpg</a>
-<a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/blob/main/content.03_OpenSesameExpDesignII%5Cimages%5CN11.jpg">N11.jpg</a></p>
+<p>Please download them <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/tree/master/content/.03_OpenSesameExpDesignII/images/stimuli.zip">here</a> and unzip them</p>
 <p>If we want to use images in OpenSesame, we need to make them accessible. To do this, we need to add them to the file pool <img alt="" src="../../_images/image66.png" />, and click the small green add symbol. This will allow you to browse your computer and select the files. When you have added all four images, the file pool should look like this:</p>
 <p><img alt="" src="../../_images/image38.png" /></p>
 </section>
@@ -643,8 +637,8 @@ document.write(`
 <section id="creating-the-experimental-loop">
 <h3>Creating the experimental_loop<a class="headerlink" href="#creating-the-experimental-loop" title="Permalink to this heading">#</a></h3>
 <p>Now that we know the task works in principle, we can scale it up to include experimental blocks and change the background image. Copy and paste an unlinked version of practice_loop and place it after end_of_practice. We do not need end_of_practice, so you can permanently delete it. The overview of your experiment should now look like this:</p>
-<p><img alt="" src="../../_images/image32.png" />
-Rename practice_loop_1 to experimental_loop, and permanently delete logger_1. Copy and paste a linked version of logger in the place of logger_1 after keyboard_response_1. This will ensure we have a tidier data file.</p>
+<p><img alt="" src="../../_images/image32.png" /></p>
+<p>Now, rename practice_loop_1 to experimental_loop. In addition, let block_loop_1 run <code class="docutils literal notranslate"><span class="pre">trial_sequence</span></code> and remove allUnused items. Applying the DRY approach we explained in the previous chapter, we now make sure all practice and experimental trials remain identical, even in case we change part of it.</p>
 </section>
 <section id="specifying-the-background-images">
 <h3>Specifying the background images<a class="headerlink" href="#specifying-the-background-images" title="Permalink to this heading">#</a></h3>
@@ -782,7 +776,7 @@ All that we replaced is response_time before BY cue_type * trial_type. We could 
 </section>
 <section id="asking-for-help">
 <h2>Asking for help<a class="headerlink" href="#asking-for-help" title="Permalink to this heading">#</a></h2>
-<p>The aim of this guide is to provide you with support to create experiments on your own. However, there will be times where you do not know how to put your idea into practice, or you cannot figure out what is wrong with your experiment. If you are asking for help, the person you are asking will not be very happy if you just say “it doesn’t work”. They will be very grateful if you can break it down and say “I have tried these steps, but it does not work”, or “I have narrowed it down to X, but I cannot work out what is wrong with it”. In my experience, the act of writing down the steps you have taken to solve the problem can often lead you to the solution yourself as you see the bigger picture.</p>
+<p>The aim of this guide is to provide you with support to create experiments on your own. However, there will be times where you do not know how to put your idea into practice, or you cannot figure out what is wrong with your experiment. If you are asking for help, the person you are asking will not be very happy if you just say “it doesn’t work”. They will be very grateful if you can break it down and say “I have tried these steps, but it does not work”, or “I have narrowed it down to X, but I cannot work out what is wrong with it”. In our experience, the act of writing down the steps you have taken to solve the problem can often lead you to the solution yourself as you see the bigger picture.</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="exercises">
