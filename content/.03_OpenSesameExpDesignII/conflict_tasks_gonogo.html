@@ -653,9 +653,12 @@ document.write(`
 </section>
 <section id="creating-the-experimental-loop">
 <h3>Creating the experimental_loop<a class="headerlink" href="#creating-the-experimental-loop" title="Permalink to this heading">#</a></h3>
-<p>Now that we know the task works in principle, we can scale it up to include experimental blocks and change the background image. Copy and paste an unlinked version of practice_loop and place it after end_of_practice. We do not need end_of_practice, so you can permanently delete it. The overview of your experiment should now look like this:</p>
+<p>Now that we know the task works in principle, we can scale it up to include experimental blocks and change the background image. Copy and paste an unlinked version of practice_loop and place it after end_of_practice. We do not need end_of_practice, so you can permanently delete it. The overview of your experiment should now look like this (but we are not done yet!):</p>
 <p><img alt="" src="../../_images/image32.png" /></p>
 <p>Now, rename practice_loop_1 to experimental_loop. In addition, let block_loop_1 run <code class="docutils literal notranslate"><span class="pre">trial_sequence</span></code> and remove all Unused items. Applying the DRY approach we explained in the previous chapter, we now make sure all practice and experimental trials remain identical. If we later decide to change part of the trial, these changes will now automatically be applied to the practice and the experimental blocks.</p>
+<blockquote>
+<div><p><strong>Note:</strong> When you design your own experiment in the future, you might occasionally need unlinked copies of objects. However, always ensure that you never use unlinked copies of loggers, as this likely will disrupt the formatting of your log file.</p>
+</div></blockquote>
 <p>So the experimental loop should now look like this:</p>
 <p><img alt="" src="../../_images/2026-01-09_11_06_20.png" /></p>
 </section>
@@ -816,15 +819,15 @@ All that we replaced is response_time before BY cue_type * trial_type. We could 
 <h2>Excercise 1. Counterbalancing: Even or odd participant numbers<a class="headerlink" href="#excercise-1-counterbalancing-even-or-odd-participant-numbers" title="Permalink to this heading">#</a></h2>
 <p>Open the Stroop task you created during the earlier tutorial. Adapt the correct response by using the numeric button 1, 2, 3, and 4 of the keyboard.</p>
 <p>Combine loops and conditional running (use the experimental variable <code class="docutils literal notranslate"><span class="pre">subject_parity</span></code>, see  <a class="reference external" href="https://osdoc.cogsci.nl/manual/variables/">https://osdoc.cogsci.nl/manual/variables/</a>) to generate the correct response for the four colors.  For even-numbered participant numbers (version 1), use the following mapping:</p>
-<p>red &gt; 1</p>
-<p>green &gt; 2</p>
-<p>blue &gt; 3</p>
-<p>yellow &gt; 4</p>
+<p>red = 1
+green = 2
+blue = 3
+yellow = 4</p>
 <p>For odd-numbered participant numbers (version 2), use the following mapping:</p>
-<p>red &gt; 3</p>
-<p>green &gt; 4</p>
-<p>blue &gt; 1</p>
-<p>yellow &gt; 2</p>
+<p>red = 3
+green = 4
+blue = 1
+yellow = 2</p>
 <p>Indicate the correct mapping in the instructions.</p>
 <p>Note: do not create two versions of the same experiment, just program the counterbalancing in one file. Do not forget to log the version number. Check whether your solution works properly.</p>
 </section>
