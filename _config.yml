@@ -33,7 +33,7 @@ parse:
 repository:
   url                       : https://github.com/henkvs/experimentation_i_2526  # The URL to your book's repository
 #  path_to_book              : ""  # A path to your book's folder, relative t the repository root.
-  branch                    : main  # Which branch of the repository should be used when creating links
+  branch                    : master  # Which branch of the repository should be used when creating links
 
 launch_buttons:
   notebook_interface        : classic
