@@ -556,7 +556,7 @@ document.write(`
 </section>
 <section id="step-1-download-opensesame-file-and-adapt-it">
 <h2>Step 1: Download OpenSesame file and adapt it<a class="headerlink" href="#step-1-download-opensesame-file-and-adapt-it" title="Permalink to this heading">#</a></h2>
-<p>Download the Digit Span task created by <a class="reference external" href="https://github.com/berrygrant/OpenSesame">Grant M. Berry</a> using the following download <a class="reference external" href="https://downgit.github.io/#/home?url=https:%2F%2Fgithub.com%2Fberrygrant%2FOpenSesame%2Fblob%2Fmaster%2FDigitSpan_Sequential.osexp">link</a>.</p>
+<p>Download the Digit Span task created by <a class="reference external" href="https://github.com/berrygrant/OpenSesame">Grant M. Berry</a> using the following <a class="reference external" href="https://downgit.github.io/#/home?url=https://github.com/henkvs/experimentation_i_2526/tree/master/content/solutions/WMSpan_orig.osexp">link</a>. Note this is version we slightly adjusted for OpenSesame 4.</p>
 <p>Open the file in OpenSesame and try to understand how this experiment works.</p>
 <p>Let’s first make the layout of the loop nicer and reorder the columns in the <code class="docutils literal notranslate"><span class="pre">Conditions</span></code> loop. This is not easy to do in OpenSesame, so use Excel (or other spreadsheet software) instead.</p>
 <p>If you use Excel use the following steps:</p>
@@ -565,12 +565,12 @@ document.write(`
 <li><p>Sort the entire table on the first row after having set the sort options to <code class="docutils literal notranslate"><span class="pre">left</span> <span class="pre">to</span> <span class="pre">right</span></code>.</p></li>
 </ol>
 <p>See the screenshot below:</p>
-<p><img alt="" src="../../../_images/resort_loop.png" /></p>
+<p><img alt="" src="../../../_images/2026-03-09_10_39_04.png" /></p>
 <ol class="arabic simple" start="3">
 <li><p>Copy this table and paste it back into the OpenSesame loop after you have deleted all columns first (Ctrl-A &gt; remove all columns).</p></li>
 </ol>
 <p>Your loop should now look like:</p>
-<p><img alt="" src="../../../_images/loop_resorted.png" /></p>
+<p><img alt="" src="../../../_images/2026-03-09_10_42_24.png" /></p>
 <p>Please note that Nback indicates the span of the sequence presented in the corresponding trial.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2436,7 +2436,7 @@ if (typeof version == 'undefined') {
 <section id="step-2-change-number-stimuli-into-letters">
 <h2>Step 2: Change number stimuli into letters<a class="headerlink" href="#step-2-change-number-stimuli-into-letters" title="Permalink to this heading">#</a></h2>
 <p>At the moment the <code class="docutils literal notranslate"><span class="pre">GenerateNums</span></code> assigns values to the experiment variables <code class="docutils literal notranslate"><span class="pre">num0</span></code> up to <code class="docutils literal notranslate"><span class="pre">num9</span></code>. So, when span 10 is reached it will use 10 different numbers. This is done at two moments (the same script is called in two locations!): at the beginning of the experiment (before the loop runs) and at the end of each trial, i.e. before a new trial is prepared.</p>
-<p>This is the first part of this code:</p>
+<p>This is the code:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nums</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
 <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
 <span class="n">num0</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
@@ -2451,7 +2451,6 @@ if (typeof version == 'undefined') {
 <span class="n">num9</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>In the remainder of the code the temporary variables are used to assign the values to the experimental variables using the exp.set method.</p>
 <p>However, the experiment is programmed in such a way that number 7 has a special status: if a value in a sequence equals 7 it is skipped (see the Run if conditionals in the <code class="docutils literal notranslate"><span class="pre">Trials</span></code> sequences. This may be the reason why the creator of this task decided to pick random numbers from the range [1,2,3,4,5,6,8,9] WITH replacement.</p>
 <p>Let’s change the task a little bit by using letters instead of numbers and let’s not allow for using the same value multiple times (random WITHOUT replacement). To do so, we can randomly shuffle the order of a range of letters and use a unique location from this reshuffled range for each of the 10 experiment variables (<code class="docutils literal notranslate"><span class="pre">num0</span></code> up to <code class="docutils literal notranslate"><span class="pre">num9</span></code>).</p>
 <p>In order to do so, change the piece of code indicated above in the following (complete the … lines). We are going to create the relevant code in the browser first and will paste it into OpenSesame later on.</p>
@@ -2549,10 +2548,6 @@ E
 <p>If your code works well in the browser, let’s go back to OpenSesame and add it in the proper locations: the code for the presented stimuli should be inserted into <code class="docutils literal notranslate"><span class="pre">GenerateNums</span></code> and replace the part that refers to numbers.</p>
 <p>In addition, add a python inline script before the logger and call it <code class="docutils literal notranslate"><span class="pre">process_trial</span></code></p>
 <p>Add the code that calculates the <code class="docutils literal notranslate"><span class="pre">seq_presented</span></code> in this inline.</p>
-<p>Make sure you start references to the relevant variables in OpenSesame with <code class="docutils literal notranslate"><span class="pre">var.</span></code> so OpenSesame knows these are experimental variables that can be accessed in the gui and can be properly logged.</p>
-<blockquote>
-<div><p><strong>Note</strong> The temporary variables and the experimental variables have the same names in the original example. This is not recommended because it will become very confusing. If you use vars.num0=nums[0], you no longer need the exp.set(“num0”,num0) lines.</p>
-</div></blockquote>
 <p>Run the experiment. Do you see the correct letters presented? Check whether the relevant variables are logged!</p>
 </section>
 <section id="step-3-provide-feedback">
@@ -2600,7 +2595,7 @@ E
 </div>
 <p>If all the code in step 3 works properly, add it to the proper location in the <code class="docutils literal notranslate"><span class="pre">process_trial</span></code> inline. Do not forget to add <code class="docutils literal notranslate"><span class="pre">var.</span></code> to all variables.</p>
 <p>Insert a <code class="docutils literal notranslate"><span class="pre">feedback</span> <span class="pre">item</span></code> after the <code class="docutils literal notranslate"><span class="pre">process_trial</span></code> inline and show the relevant information calculated by the script, like in the example below:</p>
-<p><img alt="" src="../../../_images/feedback.png" /></p>
+<p><img alt="" src="../../../_images/2026-03-10_19_55_19.png" /></p>
 <p>Also make sure you properly log all variables. Test your experiment!</p>
 </section>
 </section>

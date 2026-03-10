@@ -530,7 +530,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-present-the-video-at-the-center-of-the-screen">Exercise 4. Present the video at the center of the screen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-change-the-speed-of-the-video">Exercise 5. Change the speed of the video</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-manipulate-the-level-of-social-exclusion">Exercise 6. Manipulate the level of social exclusion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-7-alternatives-to-manually-prepare-an-opensesame-object">Exercise 7. Alternatives to manually prepare an OpenSesame object</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-exercise-7-alternatives-to-manually-prepare-an-opensesame-object">Optional: Exercise 7. Alternatives to manually prepare an OpenSesame object</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dummy-loop-solution">1. Dummy loop solution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#run-if-solution">2. Run-If solution</a></li>
 </ul>
@@ -2589,7 +2589,7 @@ y = i**2 - 200</p>
 <span class="kn">import</span> <span class="nn">numpy</span>
 <span class="kn">import</span> <span class="nn">pygame</span>
 <span class="c1"># Full path to the video file in file pool</span>
-<span class="n">path</span> <span class="o">=</span> <span class="n">pool</span><span class="p">[</span><span class="n">var</span><span class="o">.</span><span class="n">movie_filename</span><span class="p">]</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">pool</span><span class="p">[</span><span class="n">movie_filename</span><span class="p">]</span>
 <span class="c1"># Open the video</span>
 <span class="n">video</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 <span class="c1"># A loop to play the video file. This can also be a while loop until a key</span>
@@ -2721,16 +2721,16 @@ y = i**2 - 200</p>
 <p>Hint: you need to set the weight of the rows in player1_loop and player2_loop (see the <a class="reference external" href="https://osdoc.cogsci.nl/3.3/manual/structure/loop/#advanced-loop-operations">advanced loop</a> documentation). Make sure you shuffle after the weight command, otherwise the repeats are presented after each other (behavior that is different in E-Prime)!</p>
 <p>The figure below illustrates how you can set the weight of the <code class="docutils literal notranslate"><span class="pre">player1_loop</span></code> (do the same for <code class="docutils literal notranslate"><span class="pre">player3_loop</span></code>!) by referring to a variable that is defined one level higher in the hierarchy, i.e. in the <code class="docutils literal notranslate"><span class="pre">block_loop</span></code>. Do not press the Preview button though (it will crash because we do not refer to fixed values for the weighting).</p>
 <p><br />
-<img alt="" src="../../../_images/Cyberball_nestedloops.png" /></p>
+<img alt="" src="../../../_images/Cyberball_nestedloopsOS41.png" /></p>
 <p>Test whether this works. Do you feel more excluded in the first block then in the second block?</p>
 <p>Add a third block that includes you 8 out of 10 times. Does the inclusion make you feel better?</p>
 </section>
-<section id="exercise-7-alternatives-to-manually-prepare-an-opensesame-object">
-<h3>Exercise 7. Alternatives to manually prepare an OpenSesame object<a class="headerlink" href="#exercise-7-alternatives-to-manually-prepare-an-opensesame-object" title="Permalink to this heading">#</a></h3>
+<section id="optional-exercise-7-alternatives-to-manually-prepare-an-opensesame-object">
+<h3>Optional: Exercise 7. Alternatives to manually prepare an OpenSesame object<a class="headerlink" href="#optional-exercise-7-alternatives-to-manually-prepare-an-opensesame-object" title="Permalink to this heading">#</a></h3>
 <p>Experiment with two alternatives to the items.prepare() method:</p>
 <section id="dummy-loop-solution">
 <h4>1. Dummy loop solution<a class="headerlink" href="#dummy-loop-solution" title="Permalink to this heading">#</a></h4>
-<p>Open the old experiment with the media_player you saved after Step 3. Replace the <code class="docutils literal notranslate"><span class="pre">media_player_mpy</span></code> with a dummy_loop that runs the media_player_mpy object. Add the column <code class="docutils literal notranslate"><span class="pre">my_movie_filename</span></code> to the dummy_loop (loop object) and enter the value <code class="docutils literal notranslate"><span class="pre">[movie_filename]</span></code> in the first row. Change the Video file field of media_player_mpy to [my_movie_filename]. Remove any reference to the items.prepare() command in all inlines. Because the prepare-run strategy is repeated for each loop separately, the movie is updated automatically at the end of the trial. Try whether this solution works.</p>
+<p>Open the old experiment with the media_player you saved after Step 3. Replace the <code class="docutils literal notranslate"><span class="pre">media_player_mpy</span></code> with a dummy_loop that runs the media_player_mpy object. Add the column <code class="docutils literal notranslate"><span class="pre">my_movie_filename</span></code> to the dummy_loop (loop object) and enter the value <code class="docutils literal notranslate"><span class="pre">{movie_filename}</span></code> in the first row. Change the Video file field of media_player_mpy to {my_movie_filename}. Remove any reference to the items.prepare() command in all inlines. Because the prepare-run strategy is repeated for each loop separately, the movie is updated automatically at the end of the trial. Try whether this solution works.</p>
 </section>
 <section id="run-if-solution">
 <h4>2. Run-If solution<a class="headerlink" href="#run-if-solution" title="Permalink to this heading">#</a></h4>
@@ -2818,7 +2818,7 @@ y = i**2 - 200</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-present-the-video-at-the-center-of-the-screen">Exercise 4. Present the video at the center of the screen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-change-the-speed-of-the-video">Exercise 5. Change the speed of the video</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-manipulate-the-level-of-social-exclusion">Exercise 6. Manipulate the level of social exclusion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-7-alternatives-to-manually-prepare-an-opensesame-object">Exercise 7. Alternatives to manually prepare an OpenSesame object</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-exercise-7-alternatives-to-manually-prepare-an-opensesame-object">Optional: Exercise 7. Alternatives to manually prepare an OpenSesame object</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dummy-loop-solution">1. Dummy loop solution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#run-if-solution">2. Run-If solution</a></li>
 </ul>
