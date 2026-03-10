@@ -671,20 +671,6 @@ E
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">Exception</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">Input In [4],</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">Nback</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">if</span> <span class="n">Nback</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_presented</span><span class="p">):</span>
-<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Invalid value for Nback (</span><span class="si">%s</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="n">Nback</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">seq_presented</span> <span class="o">=</span> <span class="n">seq_presented</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">Nback</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="n">seq_presented</span><span class="p">)</span>
-
-<span class="ne">Exception</span>: Invalid value for Nback (4)
-</pre></div>
-</div>
-</div>
 </div>
 <p>If your code works well in the browser, let’s go back to OpenSesame and add it in the proper locations: the code for the presented stimuli should be inserted into <code class="docutils literal notranslate"><span class="pre">GenerateNums</span></code> and replace the part that refers to numbers.</p>
 <p>In addition, add a python inline script before the logger and call it <code class="docutils literal notranslate"><span class="pre">process_trial</span></code></p>
